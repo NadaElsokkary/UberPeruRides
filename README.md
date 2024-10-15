@@ -1,12 +1,13 @@
 # UberRidesPeru
 Uber trips dataset from Peru in 2010.
-\ \
+
 This is a dataset uses a subset of samples from the Mobility Uber Perú dataset found at: https://www.kaggle.com/datasets/marcusrb/uber-peru-dataset
 The original dataset is extended with additional features relating to the context of the date of the ride as well as the current weather at the location and time of each ride.
+
 The weather information was extracted using the OpenWeatherMap API: https://openweathermap.org/
 All additional contextual features and pre-processing are detailed below.
 
-# Key Features
+## Key Features
 - **Trip ID (unique)**: the unique trip ID from the original.
 - **Worker ID**: a simple integer ID for each of the 18 drivers.
 - **driver_id**: the original driver ID in the Kaggle dataset.
@@ -35,7 +36,7 @@ All additional contextual features and pre-processing are detailed below.
 
 
 
-# Pre-Processing 
+## Pre-Processing 
 1. From the Kaggle dataset, extracted rides with 'end_state'=='drop off' or 'end_state'=='driver cancel'.
 2. Only consider drivers with 6 or more cancelled rides and more than 100 total rides. Resulting in 18 unique drivers.
 3. Parse date and time. Append date context (example: weekends and holidays)
