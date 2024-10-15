@@ -1,6 +1,6 @@
 # UberRidesPeru
 Uber trips dataset from Peru in 2010.
-\\
+\ \
 This is a dataset uses a subset of samples from the Mobility Uber Perú dataset found at: https://www.kaggle.com/datasets/marcusrb/uber-peru-dataset
 The original dataset is extended with additional features relating to the context of the date of the ride as well as the current weather at the location and time of each ride.
 The weather information was extracted using the OpenWeatherMap API: https://openweathermap.org/
